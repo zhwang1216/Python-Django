@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="#">itcast</a>
+<p>我的年龄是{{ age }}</p>
+<hr>
+<p>我的朋友是:{{ friends }}</p>
+<p>我的gril朋友是:{{ friends.2 }}</p>
+<hr>
+{% for friend in friends %}
+    <li>{{ friend }}</li>
+{% endfor %}
+{% comment %}
+    注释
+{% endcomment %}
+<hr>
+我的一年的月薪是{{ money.2019 }}
+<hr>
+我的生日是:{{ birthday|date:'Y年-m月-d日 ' }}
+<hr>
+我的简介是:{{ desc|safe }}
+</body>
+</html>
